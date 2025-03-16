@@ -1,8 +1,7 @@
-//your JS code here. If required.
 const blockIdInput = document.getElementById('block_id');
         const colorIdInput = document.getElementById('colour_id');
         const changeButton = document.getElementById('change_button');
-        const resetButton = document.getElementById('reset');
+        const resetButton = document.getElementById('reset_button');
         const gridItems = document.querySelectorAll('.grid-item');
 
         // Event listener for the Change Color button
@@ -36,6 +35,7 @@ const blockIdInput = document.getElementById('block_id');
                 item.style.backgroundColor = 'transparent';
             });
 
+            // Reset the input fields
             blockIdInput.value = '';
             colorIdInput.value = '';
         });

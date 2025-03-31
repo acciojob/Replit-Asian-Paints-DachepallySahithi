@@ -19,10 +19,6 @@
     font-weight: bold;
 }
 
-input {
-    margin: 10px;
-}
-
-button {
+input, button {
     margin: 10px;
 }

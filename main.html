@@ -7,26 +7,36 @@
 </head>
 
 <body>
-	<div id="grid-container">
-		<div class="grid-item" id="1">1</div>
-	    <div class="grid-item" id="2">2</div>
-	    <div class="grid-item" id="3">3</div>
-	    <div class="grid-item" id="4">4</div>
-	    <div class="grid-item" id="5">5</div>
-	    <div class="grid-item" id="6">6</div>
-	    <div class="grid-item" id="7">7</div>
-	    <div class="grid-item" id="8">8</div>
-	    <div class="grid-item" id="9">9</div>
-	</div>
 	
-	<div>
-        <label for="block_id">Block ID:</label>
-        <input type="number" id="block_id" min="1" max="9">
-        <label for="colour_id">Color: </label>
-        <input type="text" id="colour_id">
-		<button id="change_button">Change Color</button>
-	    <button id="reset_button">Reset</button>
+	<h1>Replit Asian Paints</h1>
+	<p>The task is to create an application having a 3 X 3 grid numbered as 1,2,3...9 with <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> as the number assigned to it. For eg : the third element of grid have the <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> 3 after this the application should also have an input for <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">input-id</span> and one for the color where we can input color as <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">color-id</span>. After we submit this we should observe the background color of that grid to be changed and after we change it to other first every grid element <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">background-color</span> should be set <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">transparent</span> after this the particular <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">ids</span> color is changed.</p>
+
+	<h2>Instructions</h2>
+	<p>The input for block id should have <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> block_id and color should have <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> as colour_id. The Change color button should have an <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> change_button and a reset button with <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> Reset.</p>
+
+	<p>The grid container should have an <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> of grid-container and the item should have an <span style="background-color: #f0f0f0; padding: 2px 4px; border-radius: 4px;">id</span> as grid-item.</p>
+
+	<div id="grid-container" class="grid-container">
+		<div id="1" class="grid-item">1</div>
+		<div id="2" class="grid-item">2</div>
+		<div id="3" class="grid-item">3</div>
+		<div id="4" class="grid-item">4</div>
+		<div id="5" class="grid-item">5</div>
+		<div id="6" class="grid-item">6</div>
+		<div id="7" class="grid-item">7</div>
+		<div id="8" class="grid-item">8</div>
+		<div id="9" class="grid-item">9</div>
 	</div>
+
+	<br>
+	<label for="block_id">Block ID:</label>
+	<input type="text" id="block_id" name="block_id"><br><br>
+
+	<label for="colour_id">Color:</label>
+	<input type="text" id="colour_id" name="colour_id"><br><br>
+
+	<button id="change_button">Change Color</button>
+	<button id="reset_button">Reset</button>
 
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
